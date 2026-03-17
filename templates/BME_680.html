@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <script type="text/javascript" src="/static/BME_680.js"></scripttype>></script>
+        <link rel="stylesheet" type="text/css" href="/static/BME_680.css">
+        <meta charset="utf-8" />
+        <title> capteur BME 680</title>
+     </head>
+     <body>
+        <header>
+            <h1>capteur BME 680</h1>
+            <img src="https://s1.qwant.com/thumbr/474x266/0/3/a764fd795b6cba56637ac0a49863f88723d141bc8fa5bce38a28fbc7cce9f8/OIP.iSX96fvVHmbSq21X2Uox7gHaEK.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%2Fid%2FOIP.iSX96fvVHmbSq21X2Uox7gHaEK%3Fpid%3DApi&q=0&b=1&p=0&a=0" width="300">
+            <li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf">Lien de téléchargement du document technique de l'appareil.</a></li>
+        </header>
+        <br>
+        <p>Le capteur BME 680 par bosch est une toute petite puce notament utilisé dans le matériel arduino</p>
+        <p>Cette appareil a 4 fonction principal : baromètre, hygromètre, thermomètre et détecteur de gaz.</p>
+        <div class="flex-container">
+            <div>
+                <h3>Baromètre</h3>
+                <p>Un baromètre sert a mesurer la pression ambiante ici présent en hPa.</p>
+                <p>Ce baromètre peut également servir à mesurer l'altitude et à prévenir de la météo à venir, car sa préçision est tellement bonne qu'il peut détecter la baisse de pression du a l'atitude au mètre près ainci que qu'une monté ou dessante soudaine de préssion annonçant l'arivé d'un orage ou d'un temps dégagé chaud et sec.</p>
+            </div>
+            <div>
+                <h3>Hygromètre</h3>
+                <p>Un hygromètre sert a mesurer l'humidité ambiante ici présent en %.</p>
+                <p>Cette hydromètre peut aussi servir a estimer la météo car ca précision est suffisant pour évaluer le risque de pluit, de brouillard, de rosé... de plus il peut coupler aux baromètre déterminé avec plus de précision la venue d'un orage ou d'un temps sec</p>
+            </div>
+            <div>
+                <h3>Thermomètre</h3>
+                <p>Un thermomètre sert à mesuré des température ici présent en °C.</p>
+                <p>Ce thermomètre mesure la température ambiante et peut servir aussi servir a affiné encore d'avantage la préçision des mesure de météo.</p>
+            </div>
+            <div>
+                <h3>Détecteur de gaz</h3>
+                <p>Un détecteur de gaz sert a détecté la présence d'un ou de plusieur gaz dans l'air ici en %.</p>
+                <p>Le détecteur de gaz ici présent sert surtout a mesuré la qualité de l'air mais ne permet pas vraiment d'autre application, et peut aussi aider a estimé plus présisément la météo.</p>
+            </div>
+        </div>
+        <br>
+        <table>
+            <tr>
+                <th>marque</th>
+                <th>bosch</th>
+            </tr>
+            <tr>
+                <th>hauteur</th>
+                <th>1,0mm</th>
+            </tr>
+            <tr>
+                <th>largeur et longueur</th>
+                <th>3.0mm par 3.0mm</th>
+            </tr>
+            <tr>
+                <th>voltage</th>
+                <th>1,71V à 3.6V</th>
+            </tr>
+            <tr>
+                <th>consomation maximale</th>
+                <th>3.7μA à 1 Hz</th>
+            </tr>
+            <tr>
+                <th>plage de mesure de température</th>
+                <th>-40°C à +85°C</th>
+            </tr>
+            <tr>
+                <th>préçision de mesure de température</th>
+                <th>1°C</th>
+            </tr>
+            <tr>
+                <th>plage de mesure de pression</th>
+                <th>300hPa à 1100 hPa</th>
+            </tr>
+            <tr>
+                <th>précision de mesure de pression</th>
+                <th>1 hPa</th>
+            </tr>
+            <tr>
+                <th>plage de mesure d'humidité</th>
+                <th>0% à 100%</th>
+            </tr>
+            <tr>
+                <th>précision de mesure de l'humidité</th>
+                <th>3%</th>
+            </tr>
+        </table>
+        <br>
+        <form>
+            <p><label>Quel est le nom du capteur ? </label>
+            <br>
+            <input type="text" name="q1" id="q1" /></p>
+            <p><label>Ce capteur fait office de :</label>
+            <br>
+            <input type="radio" name="q2" value="a" >Baromètre.<br>
+            <input type="radio" name="q2" value="b" >hygromètre.<br>
+            <input type="radio" name="q2" value="c" >thermomètre.<br>
+            <input type="radio" name="q2" value="d" >détecteur de gaz.<br>
+            <input type="radio" name="q2" value="e" >les 4 à la fois.<br></p>
+            <p><label>En plus de ces fonction primaire, il peut servir a :</label>
+            <br>
+            <input type="radio" name="q3" value="a" >mesuré des longueur.<br>
+            <input type="radio" name="q3" value="b" >faire le café.<br>
+            <input type="radio" name="q3" value="c" >estimé la météo et l'altitude.<br></p>
+        </form>
+        <button onclick="Valider()">Valider les réponses</button>
+        <section>
+            <p>le résultat va apparêtre içi</p>
+        </section>
+     </body>
+</html>

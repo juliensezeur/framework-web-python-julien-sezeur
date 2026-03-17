@@ -1,0 +1,30 @@
+table
+{
+    background-color: #000000;
+    margin: 1%;
+    padding: 0,5%;
+}
+tr
+{
+    background-color:rgb(168, 251, 66);
+}
+div
+{
+    background-color: #95ffff;
+    margin: 1%;
+    padding: 1%;
+}
+.flex-container
+{
+  display: flex;
+  flex-direction: row;
+}
+form
+{
+    background-color:rgb(232, 93, 250);
+    margin: 1%;
+}
+html
+{
+    background-color: rgb(249, 255, 162);
+}
